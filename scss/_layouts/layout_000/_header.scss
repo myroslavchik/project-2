@@ -1,0 +1,28 @@
+.header {
+
+    position: relative;
+    z-index: 999;
+
+    .container {
+        min-height: 54px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            width: 150px;
+            height: 35px;
+        }
+
+        .icon-list {
+            display: none;
+
+            .icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+}

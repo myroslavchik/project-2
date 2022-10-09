@@ -1,0 +1,11 @@
+@import "base/index";
+
+@import "./_layouts/layout_000/index";
+
+@media only screen and (min-width: 768px) {
+  @import "./_layouts/layout_768/index";
+}
+
+@media only screen and (min-width: 1170px) {
+    @import "./_layouts/layout_1200/index";
+  }

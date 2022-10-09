@@ -1,0 +1,67 @@
+.slider-content { 
+
+    margin-top: -55px;
+    margin-bottom: 50px;
+
+    .slide {
+        min-height: 100vh;
+    }
+
+    .slider {
+        margin-bottom: 0;
+    }
+
+    .titles {
+
+        padding: 15px;
+        padding-top: 75px;
+
+        h2 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 70px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            margin-bottom: 35px;
+        }
+
+        h3 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.3em;
+            color: #FFFFFF;
+        }
+    }
+
+    ////// DOTS
+ 
+    .slick-dots {
+
+        bottom: 50px;
+
+        
+            button {
+                display: block;
+                width: 8px;
+                height: 8px;
+                border: 1px solid #fff;
+                border-radius: 100%;
+                background-color: transparent;
+                text-indent: -9999px;
+            }
+        
+            li.slick-active button {
+                background-color: rgb(255, 255, 255);
+            }
+        
+    }
+ 
+
+    /// 
+
+
+}
