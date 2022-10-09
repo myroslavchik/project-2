@@ -82,24 +82,35 @@ $('.slider').slick({
 });
 
 
-/////Map 
-
-
-function initMap() {
-
-  const CENTER = { lat: 50.433535625228124, lng: 30.522252965466034 };
-  const MAP = new google.maps.Map(document.getElementById("map"), {
-      center: CENTER,
-      zoom: 13
-    });
-
-  }
-
-
-
-
 
 
 
 
 });
+
+
+function initMap() {
+
+  const CENTER = { lat: 50.453451764092684, lng: 30.517154601622465 };
+  const MAP = new google.maps.Map(document.getElementById("map"), {
+      center: CENTER,
+      zoom: 13,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+
+    const SVG_MARKER = {
+        scale: 2,
+        anchor: new google.maps.Point(0, 35),
+      };
+
+
+      marker = new google.maps.Marker({
+        position: CENTER,
+        map: MAP,
+        icon:'./img/marker.svg',
+        animation: google.maps.Animation.DROP
+    });
+
+}
+
