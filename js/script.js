@@ -45,10 +45,10 @@ $('.slider').slick({
       {
         breakpoint: 1170,
         settings: {
-        slidesToShow: 3,
-        centerMode: false, 
-        dots: false,
-        arrows: true,
+        slidesToShow: 2,
+        centerMode: true, 
+        dots: true,
+        arrows: false,
         }
       },
       {

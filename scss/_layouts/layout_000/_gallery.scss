@@ -1,11 +1,13 @@
 .gallery {
 
+    padding-top: 75px;
+    padding-bottom: 75px;
+
     .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 75px;
     }
 
 
@@ -25,6 +27,7 @@
         font-size: 44px;
         text-align: center;
         color: #2C4058;
+        text-transform: uppercase;
         margin-bottom: 45px;
     }
 
@@ -67,6 +70,7 @@
         font-size: 14px;
         color: #000000;
         text-transform: uppercase;
+        cursor: pointer;
     }
 
 
