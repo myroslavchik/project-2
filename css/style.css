@@ -96,6 +96,12 @@ table {
   flex-direction: column;
   align-items: center;
 }
+.header .menu .menu-list .menu-list__item::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #FFFFFF;
+}
 .header .menu .menu-list .menu-list__item a {
   text-decoration: none;
   font-family: "Source Sans Pro";
@@ -156,7 +162,20 @@ table {
   min-height: 100vh;
 }
 .slider-content .slider {
+  position: relative;
   margin-bottom: 0;
+}
+.slider-content .arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.slider-content .arrow svg {
+  width: 40px;
+  height: 40px;
 }
 .slider-content .titles {
   padding: 15px;
@@ -181,7 +200,13 @@ table {
   color: #FFFFFF;
 }
 .slider-content .slick-dots {
-  bottom: 50px;
+  bottom: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.slider-content .slick-dots li:not(:last-child) {
+  margin-bottom: 30px;
 }
 .slider-content .slick-dots button {
   display: block;
