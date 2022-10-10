@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet">
@@ -13,26 +14,32 @@
     <link rel="stylesheet" type="text/css" href="./js/slick-1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./css/popup.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Exam#2</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Monticello</title>
 </head>
 <body>
+    <h1 class="visually-hidden">Architecture company</h1>
     <header>
         <section class="header">
+            <h2 class="visually-hidden">Monticello</h2>
             <div class="container">
-                <img src="./img/logo.png" alt="Logo Monticello" width="241px" height="54px">
+                <a href="#">
+                    <img src="./img/logo.png" alt="Logo Monticello" width="241" height="54">
+                </a>
                 <nav class="menu">
+                    <h2 class="visually-hidden">Monticello</h2>
                     <ul class="menu-list">
                         <li class="menu-list__item">
-                            <a href="#">About Us</a>
+                            <a href="#about">About Us</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#">Projects</a>
+                            <a href="#projects">Projects</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#">News</a>
+                            <a href="#news">News</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#">Contact</a>
+                            <a href="#contacts">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -71,9 +78,9 @@
         </section>
     </header>
     <main>
-        <section class="slider-content">
+        <section class="slider-content" id="about">
             <div class="slider">
-                <div class="slide" style="background-image: linear-gradient(90deg, rgba(85,183,255,0.62) 10%, rgba(126,90,255,0.73) 66%),
+                <div class="slide" style="background-image: linear-gradient(90deg, hsla(205, 100%, 67%, 0.789) 10%, hsla(253, 100%, 68%, 0.717) 66%),
                 url('./img/bg-1.jpg');">
                     <div class="titles">
                         <h2>Simple & Modern</h2>
@@ -122,10 +129,11 @@
                 <div class="line"></div>
                 <h2>What we do</h2>
                 <div class="grid">
-                    <div class="grid-1">
-                        <img src="./img/projects-image-1.jpg" alt="White building" width="630px" height="470px">
+                    <div class="grid-1 div1">
+                        <div class="blue"></div>
+                        <img src="./img/projects-image-1.jpg" alt="White building" width="630" height="470">
                     </div>
-                    <div class="grid-2">
+                    <div class="grid-2 div2">
                         <h3>One world</h3>
                         <h2>Trade center</h2>
                         <p>Increasing prosperity in our lives can be
@@ -134,12 +142,18 @@
                             powerful.
                         </p>
                         <button>More details</button>
-                        <p class="locations">New York City, United States - 1776 feet</p>
+                        <p class="locations">
+                            <a href="#map" style="text-decoration: none; color: #000">
+                                New York City, United States - 1776 feet
+                            </a>
+                        </p>
+                            
                     </div>
-                    <div class="grid-3">
-                        <img src="./img/projects-image-2.jpg" alt="Brown building" width="630px" height="470px">
+                    <div class="grid-3 div4">
+                        <div class="purple"></div>
+                        <img src="./img/projects-image-2.jpg" alt="Brown building" width="630" height="470">
                     </div>
-                    <div class="grid-4">
+                    <div class="grid-4 div3">
                         <h3>International</h3>
                         <h2>Commerce center</h2>
                         <p>Successful businesses have many things
@@ -148,18 +162,23 @@
                             advertising network may help.
                         </p>
                         <button>More details</button>
-                        <p class="locations">Hong Kong - 1588 feet</p>
+                        <p class="locations">
+                            <a href="#map" style="text-decoration: none; color: #000">
+                                Hong Kong - 1588 feet
+                            </a>
+                            
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="news">
+        <section class="news" id="news">
             <div class="container">
                 <div class="line"></div>
                 <h2>Latest news</h2>
                 <div class="slider-news">
                     <div class="slider-news__item">
-                        <img src="./img/news-image-1.jpg" alt="Architecture building" width="370px" height="240px">
+                        <img src="./img/news-image-1.jpg" alt="Architecture building" width="370" height="240">
                         <div class="inside">
                             <h3>See the unmatched beauty of the great</h3>
                             <p>Free directories: directories are
@@ -175,7 +194,7 @@
                         </div>
                     </div>
                     <div class="slider-news__item">
-                        <img src="./img/news-image-2.jpg" alt="Architecture building" width="370px" height="240px">
+                        <img src="./img/news-image-2.jpg" alt="Architecture building" width="370" height="240">
                             <div class="inside">
                             <h3>Effective advertising pointers</h3>
                             <p>Having a home based business is a wonderful
@@ -191,7 +210,55 @@
                         </div>
                     </div>
                     <div class="slider-news__item">
-                        <img src="./img/news-image-3.jpg" alt="Architecture building" width="370px" height="240px">
+                        <img src="./img/news-image-3.jpg" alt="Architecture building" width="370" height="240">
+                        <div class="inside">
+                            <h3>Hypnotize yourself into the ghost</h3>
+                            <p>There are many things that are
+                                important to catalog design...
+                            </p>
+                            <div class="autor">
+                                <img src="./img/news-ava-2.jpg" alt="Alice Ward">
+                                <div>
+                                    <h4>Alice Ward</h4>
+                                    <h5>13 Nov 2019</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-news__item">
+                        <img src="./img/news-image-1.jpg" alt="Architecture building" width="370" height="240">
+                        <div class="inside">
+                            <h3>See the unmatched beauty of the great</h3>
+                            <p>Free directories: directories are
+                                perfect for customers that are searching for...
+                            </p>
+                            <div class="autor">
+                                <img src="./img/news-ava-1.jpg" alt="Alja Brun">
+                                <div>
+                                    <h4>Alja Brun</h4>
+                                    <h5>20 Jan 2020</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-news__item">
+                        <img src="./img/news-image-2.jpg" alt="Architecture building" width="370" height="240">
+                            <div class="inside">
+                            <h3>Effective advertising pointers</h3>
+                            <p>Having a home based business is a wonderful
+                                asset to your life...
+                            </p>
+                            <div class="autor">
+                                <img src="./img/news-ava-2.jpg" alt="Dominic Freeman">
+                                <div>
+                                    <h4>Dominic Freeman</h4>
+                                    <h5>13 Dec 2019</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-news__item">
+                        <img src="./img/news-image-3.jpg" alt="Architecture building" width="370" height="240">
                         <div class="inside">
                             <h3>Hypnotize yourself into the ghost</h3>
                             <p>There are many things that are
@@ -214,59 +281,78 @@
                 <div class="line"></div>
                 <h2>Gallery</h2>
                 <div class="gallery-container">
+                    <h2 class="visually-hidden">Buildings</h2>
                     <a href="./img/gallery-1.jpg" class="first-img div1">
-                        <img src="./img/gallery-1.jpg" width="580" height="438" />  
+                        <div class="zoom">
+                            <img src="./img/bi_zoom-in.svg" alt="Zoom">
+                        </div>
+                        <img src="./img/gallery-1.jpg" alt="Building" width="580" height="438" />  
                     </a>
                     <a href="./img/gallery-2.jpg" class="seconds-img div2">
-                        <img src="./img/gallery-2.jpg" width="285" height="214" />  
+                        <img src="./img/gallery-2.jpg" alt="Building" width="285" height="214" />  
                     </a>
                     <a href="./img/gallery-3.jpg" class="seconds-img div3">
-                        <img src="./img/gallery-3.jpg" width="285" height="214" />  
+                        <img src="./img/gallery-3.jpg" alt="Building" width="285" height="214" />  
                     </a>
                     <a href="./img/gallery-4.jpg" class="seconds-img div4">
-                        <img src="./img/gallery-4.jpg" width="285" height="214" />  
+                        <img src="./img/gallery-4.jpg" alt="Building" width="285" height="214" />  
                     </a>
                     <a href="./img/gallery-5.jpg" class="seconds-img div5">
-                        <img src="./img/gallery-5.jpg" width="285" height="214" />  
+                        <img src="./img/gallery-5.jpg" alt="Building" width="285" height="214" />  
                     </a>
                   </div>
                 <button>See more</button>
             </div>
         </section>
         <section class="map">
+            <h2 class="visually-hidden">Google map</h2>
             <div id="map" style="min-height: 600px;"></div>
         </section>
-        <section class="footer">
+        <section class="footer" id="contacts">
             <div class="container">
                 <div class="form">
                     <div class="line"></div>
                     <h3>Get in touch</h3>
-                    <ul class="address-list">
-                        <li class="address-list__item">
-                            <a href="#">
-                                91 Nolan Extensions Suite 670
-                            </a>
-                        </li>
-                        <li class="address-list__item">
-                            +001 356-868-2454
-                        </li>
-                        <li class="address-list__item">
-                            <a href="mailto:montichello@service.com">
-                                montichello@service.com
-                            </a>
-                        </li>
-                        <li class="address-list__item">
-                            From 07:05AM to 19:30PM
-                        </li>
-                    </ul>
-                    <form class="inputs">
-                        <input type="text" id="name" value="Mollie Medina">
-                        <input type="email" id="email" value="Email">
-                        <button>Submit</button>
-                    </form>
+                    <div class="form-inputs">
+                        <ul class="address-list">
+                            <li class="address-list__item">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#location-dot-solid"></use>
+                                </svg>
+                                <a href="#">
+                                    91 Nolan Extensions Suite 670
+                                </a>
+                            </li>
+                            <li class="address-list__item">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#phone-solid"></use>
+                                </svg>
+                                +001 356-868-2454
+                            </li>
+                            <li class="address-list__item">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#inbox-solid"></use>
+                                </svg>
+                                <a href="mailto:montichello@service.com">
+                                    montichello@service.com
+                                </a>
+                            </li>
+                            <li class="address-list__item">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#clock-regular"></use>
+                                </svg>
+                                From 07:05AM to 19:30PM
+                            </li>
+                        </ul>
+                        <form class="inputs">
+                            <input type="text" id="name" value="Mollie Medina">
+                            <input type="email" id="email" value="Email">
+                            <button>Submit</button>
+                        </form>
+                    </div>
                 </div>
                 <div class="logo">
-                    <img src="./img/logo.png" alt="Logo Monticello" width="241px" height="54px">
+                    <img src="./img/logo.png" alt="Logo Monticello" width="241" height="54">
                     <h3>Copyrights © 2020 Montichello</h3>
                 </div>
                 <div>

@@ -1,0 +1,83 @@
+.projects {
+
+    padding-bottom: 150px;
+
+    .container {
+
+        button {
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #55B7FF;
+            border: unset;
+            color: #fff;
+        }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 70px;
+        grid-row-gap: 120px;
+        margin-bottom: 0;
+
+        .grid-1 {
+            margin-bottom: 0;
+
+            .grid-1 {
+                position: relative;
+    
+                .blue {
+                    position: absolute;
+                    width: 585px;
+                    height: 470px;
+                    background-color: #55B7FF;
+                    bottom: 57px;
+                    left: -215px;
+                }
+    
+                img {
+                    height: 470px;
+                    max-width: 630px;
+                    margin-bottom: 0;
+                    z-index: 999;
+                }
+            }
+        }
+
+        .grid-3 {
+            margin-bottom: 0;
+
+            .purple {
+                position: absolute;
+                width: 585px;
+                height: 470px;
+                background-color: #7E5AFF;
+                bottom: 57px;
+                right: -215px;
+            }
+
+            img {
+                height: 470px;
+                max-width: 630px;
+                margin-bottom: 0;
+                z-index: 999;
+            }
+        }
+
+        .locations {
+            margin-bottom: 0;
+        }
+
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 2 / 1 / 3 / 2; }
+        .div4 { grid-area: 2 / 2 / 3 / 3; }
+
+    }
+        
+}

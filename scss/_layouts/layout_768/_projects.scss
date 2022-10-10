@@ -18,36 +18,53 @@
 
         .grid-1 {
             position: relative;
-            width: 585px;
-            min-height: 470px;
-            background-color: #55B7FF;
-            margin-bottom: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 35px;
+            
+
+            .blue {
+                position: absolute;
+                width: 585px;
+                height: 470px;
+                background-color: #55B7FF;
+                top: -57px;
+                left: -215px;
+            }
 
             img {
-                position: absolute;
-                top: 57px;
-                left: 150px;
                 height: auto;
                 max-width: 630px;
                 margin-bottom: 0;
+                z-index: 999;
             }
+
         }
 
         .grid-3 {
             position: relative;
-            margin-left: auto;
-            width: 585px;
-            min-height: 470px;
-            background-color: #7E5AFF;;
-            margin-bottom: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 35px;
+
+            .purple {
+                position: absolute;
+                width: 585px;
+                height: 470px;
+                background-color: #7E5AFF;
+                top: -57px;
+                right: -215px;
+            }
 
             img {
-                position: absolute;
-                top: 57px;
-                right: 150px;
                 height: auto;
                 max-width: 630px;
                 margin-bottom: 0;
+                z-index: 999;
             }
         }
 

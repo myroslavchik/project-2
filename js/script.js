@@ -21,7 +21,7 @@ $('.slider').slick({
     slidesToShow: 1,
     autoplaySpeed: 4000,
     adaptiveHeight: true,
-    autoplay: false,
+    autoplay: true,
     fade: true,
     cssEase: 'linear'
   })
@@ -30,17 +30,21 @@ $('.slider').slick({
   /// SLIDER Guitars
 
   $('.slider-news').slick({
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 400,
-    slidesToShow: 4,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     adaptiveHeight: true,
+    centerMode: true,
+    centerPadding: '0px',
     arrows: true,
-    autoplay: false,
+    dots: true,
+    autoplay: true,
     autoplaySpeed: 4000,
     draggable: true,
-    prevArrow:"<img class='a-left control-c prev slick-prev' src='./img/prev.png'>",
-    nextArrow:"<img class='a-right control-c next slick-next' src='./img/next.png'>",
+    prevArrow:"<img class='a-left control-c prev slick-prev' src='./img/arrow-left.svg'>",
+    nextArrow:"<img class='a-right control-c next slick-next' src='./img/arrow-right.svg'>",
     responsive: [
       {
         breakpoint: 1170,

@@ -26,6 +26,15 @@
         .div4 { grid-area: 1 / 3 / 2 / 4; }     
         .div5 { grid-area: 2 / 3 / 3 / 4; }
 
+        .zoom {
+
+            img {
+                width: 70px;
+                height: 70px;
+            }
+
+        }
+
         .first-img img {
             max-width: 380px;
             height: 312px;
