@@ -28,68 +28,77 @@
 
     .grid {
 
+        img {
+            height: auto;
+            width: 100%;
+            margin-bottom: 25px;
+        }
 
-    img {
-        height: auto;
-        width: 100%;
-        margin-bottom: 25px;
+        h3 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            color: #2C4058;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            text-align: unset;
+            margin-bottom: 19px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #2C4058;
+            margin-bottom: 40px;
+        }
+
+        button {
+            width: 190px;
+            min-height: 50px;
+            background: transparent;
+            border: 1px solid #000;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000000;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+        }
+
+        .locations {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: #000000;
+        }
+
+        .locations::before {
+            content: url(/img/icon-locations.svg);
+            margin-right: 10px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #55B7FF;
+            border: unset;
+            color: #fff;
+        }
+
     }
-
-    h3 {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        color: #2C4058;
-        margin-bottom: 5px;
-        text-transform: uppercase;
-    }
-
-    h2 {
-        text-align: unset;
-        margin-bottom: 19px;
-        text-transform: uppercase;
-    }
-
-    p {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
-        color: #2C4058;
-        margin-bottom: 40px;
-    }
-
-    button {
-        width: 190px;
-        min-height: 50px;
-        background: transparent;
-        border: 1px solid #000;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        color: #000000;
-        text-transform: uppercase;
-        margin-bottom: 60px;
-    }
-
-    .locations {
-        font-family: 'Open Sans';
-        font-style: italic;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 20px;
-        color: #000000;
-    }
-
-    .locations::before {
-        content: url(/img/icon-locations.svg);
-        margin-right: 10px;
-    }
-
-}
 
 }
 

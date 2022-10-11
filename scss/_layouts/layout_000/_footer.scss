@@ -118,6 +118,13 @@
                     text-transform: uppercase;
                     cursor: pointer;
                 }
+
+                button:hover {
+                    background-color: #55B7FF;
+                    border: unset;
+                    color: #fff;
+        
+                }
             }
         }
 //////

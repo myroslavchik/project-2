@@ -1,4 +1,6 @@
 .projects {
+    overflow: hidden;
+
     .container {
         display: flex;
         flex-direction: column;
@@ -25,11 +27,11 @@
             
             .blue {
                 position: absolute;
-                width: 585px;
+                width: 785px;
                 min-height: 470px;
                 background-color: #55B7FF;
-                top: -33px;
-                left: -14px;
+                bottom: 33px;
+                right: 260px;
             }
 
             img {
@@ -50,11 +52,11 @@
 
             .purple {
                 position: absolute;
-                width: 492px;
+                width: 785px;
                 min-height: 463px;
                 background-color: #7E5AFF;
-                top: -33px;
-                right: -14px;
+                bottom: 33px;
+                left: 260px;
             }
 
             img {
@@ -92,16 +94,6 @@
         text-transform: uppercase;
         margin-bottom: 60px;
         cursor: pointer;
-    }
-
-    button {
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #55B7FF;
-        border: unset;
-        color: #fff;
     }
 
     .locations::before {

@@ -1,70 +1,62 @@
 .projects {
-
+    overflow: hidden;
     padding-bottom: 150px;
 
     .container {
 
     .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 70px;
-        grid-row-gap: 120px;
+
         margin-bottom: 0;
 
-        .grid-1 {
-            margin-bottom: 0;
-
-            .grid-1 {
-                position: relative;
-    
-                .blue {
-                    position: absolute;
-                    width: 569px;
-                    min-height: 470px;
-                    background-color: #55B7FF;
-                    top: -57px;
-                    left: -215px;
-                }
-    
-                img {
-                    height: 470px;
-                    max-width: 630px;
-                    margin-bottom: 0;
-                    z-index: 999;
-                }
-            }
-        }
-
-        .grid-3 {
-            margin-bottom: 0;
-
-            .purple {
-                position: absolute;
-                width: 585px;
-                min-height: 470px;
-                background-color: #7E5AFF;
-                bottom: 57px;
-                right: -215px;
-            }
+        .flexbox-1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 120px;
 
             img {
                 height: 470px;
-                max-width: 630px;
+                width: 630px;
                 margin-bottom: 0;
                 z-index: 999;
+                margin-right: 70px;
             }
+
+            .blue {
+                position: absolute;
+                width: 785px;
+                min-height: 470px;
+                background-color: #55B7FF;
+                bottom: 57px;
+                right: 260px;
+            }
+        }
+
+        .flexbox-2 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            img {
+                width: 625px;
+            }
+
+            .purple {
+                position: absolute;
+                width: 785px;
+                min-height: 470px;
+                background-color: #7E5AFF;
+                bottom: 57px;
+                left: 260px;
+            }
+
+        }
+
         }
 
         .locations {
             margin-bottom: 0;
         }
 
-        }
-        
-        .div1 { grid-area: 1 / 1 / 2 / 2; }
-        .div2 { grid-area: 1 / 2 / 2 / 3; }
-        .div3 { grid-area: 2 / 1 / 3 / 2; }
-        .div4 { grid-area: 2 / 2 / 3 / 3; }
     }  
 }
