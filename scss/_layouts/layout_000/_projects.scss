@@ -24,6 +24,10 @@
             color: #2C4058;
             margin-bottom: 45px;
             text-transform: uppercase;
+
+            @media only screen and (max-width: 400px) {
+                font-size: 35px;
+            }
         }
 
     .grid {

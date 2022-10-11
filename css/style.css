@@ -461,6 +461,11 @@ table {
   margin-bottom: 45px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 400px) {
+  .projects .container h2 {
+    font-size: 35px;
+  }
+}
 .projects .container .grid img {
   height: auto;
   width: 100%;
