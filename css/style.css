@@ -218,7 +218,7 @@ table {
   display: block;
   width: 8px;
   height: 8px;
-  border: 1px solid #fff;
+  border: 1px solid #FFFFFF;
   border-radius: 100%;
   background-color: transparent;
   text-indent: -9999px;
@@ -236,7 +236,7 @@ table {
   margin-bottom: 0;
 }
 .news .container .slider-news__item {
-  background-color: #fff;
+  background-color: #FFFFFF;
   height: 514px;
   max-width: 370px;
   margin-right: 15px;
@@ -321,7 +321,7 @@ table {
   display: block;
   width: 8px;
   height: 8px;
-  border: 1px solid #fff;
+  border: 1px solid #FFFFFF;
   border-radius: 100%;
   background-color: transparent;
   text-indent: -9999px;
@@ -343,7 +343,7 @@ table {
 .gallery .line {
   width: 100px;
   height: 1px;
-  background-color: #000000;
+  background-color: #000;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -415,10 +415,10 @@ table {
   height: auto;
 }
 .gallery .seconds-img img:hover {
-  outline: 2px solid #000000;
+  outline: 2px solid #000;
 }
 .gallery .first-img:hover {
-  outline: 2px solid #000000;
+  outline: 2px solid #000;
 }
 .gallery button {
   width: 190px;
@@ -429,14 +429,14 @@ table {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   cursor: pointer;
 }
 .gallery button:hover {
   background-color: #55B7FF;
   border: unset;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .projects .container {
@@ -503,7 +503,7 @@ table {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   margin-bottom: 60px;
 }
@@ -513,7 +513,7 @@ table {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  color: #000000;
+  color: #000;
 }
 .projects .container .grid .locations::before {
   content: url(/img/icon-locations.svg);
@@ -525,7 +525,7 @@ table {
 .projects .container .grid button:hover {
   background-color: #55B7FF;
   border: unset;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .footer {
@@ -563,7 +563,7 @@ table {
 .footer .container .form .line {
   width: 100px;
   height: 1px;
-  background-color: #000000;
+  background-color: #000;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -582,7 +582,7 @@ table {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  color: #000000;
+  color: #000;
   margin-bottom: 15px;
 }
 @media only screen and (max-width: 320px) {
@@ -602,7 +602,7 @@ table {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  color: #000000;
+  color: #000;
 }
 @media only screen and (max-width: 320px) {
   .footer .container .form .address-list li a {
@@ -642,14 +642,14 @@ table {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   cursor: pointer;
 }
 .footer .container .form .inputs button:hover {
   background-color: #55B7FF;
   border: unset;
-  color: #fff;
+  color: #FFFFFF;
 }
 .footer .container h3 {
   font-family: "Montserrat";

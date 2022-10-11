@@ -36,7 +36,7 @@
             font-weight: 700;
             font-size: 50px;
             letter-spacing: 0.1em;
-            color: #FFFFFF;
+            color: $white;
             text-transform: uppercase;
             margin-bottom: 35px;
 
@@ -52,7 +52,7 @@
             font-size: 18px;
             line-height: 22px;
             letter-spacing: 0.3em;
-            color: #FFFFFF;
+            color: $white;
         }
     }
     ////// DOTS
@@ -71,7 +71,7 @@
                 display: block;
                 width: 8px;
                 height: 8px;
-                border: 1px solid #fff;
+                border: 1px solid $white;
                 border-radius: 100%;
                 background-color: transparent;
                 text-indent: -9999px;
