@@ -51,6 +51,7 @@ $('.slider').slick({
         settings: {
         slidesToShow: 2,
         centerMode: true, 
+        centerPadding: '20px',
         dots: true,
         arrows: false,
         }

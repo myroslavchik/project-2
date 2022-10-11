@@ -58,6 +58,7 @@
 
         img {
             margin-bottom: 40px;
+            cursor: pointer;
         }
         
         .icon-list {
@@ -65,6 +66,10 @@
             &__item:not(:last-child) {
                 margin-right: 20px;
             }
+        }
+
+        .icon-list__item:hover svg {
+            stroke: #ffffff;
         }
 
     }

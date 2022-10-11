@@ -8,6 +8,10 @@
 
         margin-bottom: 0;
 
+        .locations {
+            margin-bottom: 0;
+        }
+
         .flexbox-1 {
             display: flex;
             flex-direction: row;
@@ -53,10 +57,5 @@
         }
 
         }
-
-        .locations {
-            margin-bottom: 0;
-        }
-
     }  
 }
