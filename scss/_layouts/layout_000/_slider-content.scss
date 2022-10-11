@@ -39,6 +39,10 @@
             color: #FFFFFF;
             text-transform: uppercase;
             margin-bottom: 35px;
+
+            @media only screen and (max-width: 320px) {
+                font-size: 35px;
+            }
         }
 
         h3 {
@@ -51,9 +55,7 @@
             color: #FFFFFF;
         }
     }
-
     ////// DOTS
- 
     .slick-dots {
 
         bottom: 250px;
@@ -64,9 +66,6 @@
         li:not(:last-child) {
             margin-bottom: 30px;
         }
-        
-
-
         
             button {
                 display: block;
@@ -80,12 +79,6 @@
         
             li.slick-active button {
                 background-color: rgb(255, 255, 255);
-            }
-        
+        }
     }
- 
-
-    /// 
-
-
 }

@@ -1,21 +1,20 @@
 .projects {
-
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
+
 
         .line {
             margin-bottom: 35px;
         }
 
         h2 {
-
             margin-bottom: 90px;
         }
 
     .grid {
-
+        
         .grid-1 {
             position: relative;
             display: flex;
@@ -24,23 +23,21 @@
             align-items: center;
             margin-bottom: 35px;
             
-
             .blue {
                 position: absolute;
                 width: 585px;
-                height: 470px;
+                min-height: 470px;
                 background-color: #55B7FF;
-                top: -57px;
-                left: -215px;
+                top: -33px;
+                left: -14px;
             }
 
             img {
                 height: auto;
-                max-width: 630px;
+                width: 630px;
                 margin-bottom: 0;
                 z-index: 999;
             }
-
         }
 
         .grid-3 {
@@ -53,21 +50,20 @@
 
             .purple {
                 position: absolute;
-                width: 585px;
-                height: 470px;
+                width: 492px;
+                min-height: 463px;
                 background-color: #7E5AFF;
-                top: -57px;
-                right: -215px;
+                top: -33px;
+                right: -14px;
             }
 
             img {
                 height: auto;
-                max-width: 630px;
+                width: 630px;
                 margin-bottom: 0;
                 z-index: 999;
             }
         }
-
 
     h3 {
         margin-bottom: 15px;
@@ -98,6 +94,15 @@
         cursor: pointer;
     }
 
+    button {
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #55B7FF;
+        border: unset;
+        color: #fff;
+    }
 
     .locations::before {
         content: url(../img/icon-locations.svg);

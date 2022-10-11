@@ -15,10 +15,13 @@
         .icon-list {
             display: flex;
             flex-direction: row;
-            
-
+        
             &__item:not(:last-child) {
                 margin-right: 20px;
+            }
+
+            .icon-list__item:hover svg {
+                stroke: #FFFFFF;
             }
 
             .icon {

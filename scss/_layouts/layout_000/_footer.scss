@@ -6,6 +6,7 @@
         position: relative;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 150px;
         padding-bottom: 100px;
@@ -47,9 +48,13 @@
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 15px;
                 color: #000000;
                 margin-bottom: 15px;
+
+                @media only screen and (max-width: 320px) {
+                    font-size: 12px;
+                }
 
                 svg {
                     width: 12px;
@@ -63,8 +68,12 @@
                     font-family: 'Montserrat';
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 18px;
+                    font-size: 15px;
                     color: #000000;
+
+                    @media only screen and (max-width: 320px) {
+                        font-size: 12px;
+                    }
                 }
             }
 
@@ -77,16 +86,17 @@
                 }
 
                 input[type=text] {
-                    width: 100%;
+                    width: 90%;
                     padding: 12px;
                     box-sizing: border-box;
                     border: none;
                     border-bottom: 1px solid rgb(161, 159, 159);
                     color: #a19f9f;
+
                   }
 
                 input[type=email] {
-                    width: 100%;
+                    width: 90%;
                     padding: 12px;
                     box-sizing: border-box;
                     border: none;
@@ -110,19 +120,18 @@
                 }
             }
         }
-
-
 //////
-
         h3 {
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             color: #FFFFFF;
-        }
 
-        
+            @media only screen and (max-width: 320px) {
+                margin-bottom: 15px;
+            }
+        } 
 
         img {
             width: 150px;
@@ -133,12 +142,12 @@
         .icon-list {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
 
             &__item:not(:last-child) {
                 margin-right: 5px;
             }
             
-
             .icon {
                 width: 40px;
                 height: 40px;

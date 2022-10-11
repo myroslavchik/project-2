@@ -28,6 +28,8 @@
 
         .zoom {
 
+            top: unset;
+
             img {
                 width: 70px;
                 height: 70px;
@@ -43,6 +45,12 @@
         .seconds-img img {
             width: 185px;
             height: 150px;
+        }
+
+        button:hover {
+            background-color: #55B7FF;
+            border: unset;
+            color: #fff;
         }
 
 }
