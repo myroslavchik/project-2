@@ -18,13 +18,13 @@
                 justify-content: space-between;
             }
 
-            .line {
-                margin-bottom: 30px;
-            }
-
             h3 {
                 font-size: 44px;
                 margin-bottom: 42px;
+            }
+
+            .line::before {
+                top: 30px;
             }
 
             .address-list li:not(:last-child) {

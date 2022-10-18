@@ -19,6 +19,10 @@
                 margin-bottom: 20px;
             }
 
+            .line::before {
+                top: 20px;
+            }
+
             .address-list li {
 
                 margin-bottom: 15px;
@@ -54,6 +58,10 @@
                     border-bottom: 1px solid #a19f9f;
                     color: #a19f9f;
                   }
+
+                  button {
+                    width: 140px;
+                }
             }
         }   
 

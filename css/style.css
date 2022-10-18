@@ -109,6 +109,7 @@ table {
   font-weight: 400;
   font-size: 34px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 .header .menu .menu-list .menu-list__item:not(:last-child) {
   margin-bottom: 25px;
@@ -207,6 +208,7 @@ table {
 }
 .slider-content .slick-dots {
   bottom: 250px;
+  right: 5px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -240,18 +242,13 @@ table {
   height: 514px;
   max-width: 370px;
   margin-right: 15px;
+  cursor: pointer;
 }
 .news .container .inside {
   padding: 30px 10px;
 }
-.news .container .line {
-  width: 100px;
-  height: 1px;
-  background-color: #FFFFFF;
-  margin: 0 auto;
-  margin-bottom: 15px;
-}
 .news .container h2 {
+  position: relative;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -261,6 +258,18 @@ table {
   color: #FFFFFF;
   text-transform: uppercase;
   margin-bottom: 45px;
+}
+.news .container .line::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #FFFFFF;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .news .container img {
   width: 100%;
@@ -340,14 +349,8 @@ table {
   justify-content: center;
   align-items: center;
 }
-.gallery .line {
-  width: 100px;
-  height: 1px;
-  background-color: #000;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
 .gallery h2 {
+  position: relative;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -356,6 +359,18 @@ table {
   color: #2C4058;
   text-transform: uppercase;
   margin-bottom: 45px;
+}
+.gallery .line::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #000;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .gallery .gallery-container {
   display: grid;
@@ -367,29 +382,12 @@ table {
 }
 @media only screen and (max-width: 370px) {
   .gallery .gallery-container {
-    grid-template-columns: repeat(2, 120px);
-    grid-template-rows: 1fr repeat(3, 90px);
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 1fr repeat(3, 95px);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
+    align-items: center;
   }
-}
-.gallery .zoom {
-  position: relative;
-  top: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 45px;
-}
-.gallery .zoom img {
-  position: absolute;
-  transition: width 1.3s;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-.gallery .zoom img:hover {
-  width: 80px;
 }
 .gallery .div1 {
   grid-area: 1/1/2/3;
@@ -414,14 +412,39 @@ table {
   width: 100%;
   height: auto;
 }
-.gallery .seconds-img img:hover {
-  outline: 2px solid #000;
+.gallery img {
+  opacity: 0.8;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
-.gallery .first-img:hover {
-  outline: 2px solid #000;
+.gallery a:hover img {
+  opacity: 1;
+}
+.gallery .first-img {
+  position: relative;
+}
+.gallery .seconds-img {
+  position: relative;
+}
+.gallery .zoom {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gallery .zoom img {
+  width: 50px;
+  height: 50px;
+}
+.gallery .first-img:hover .zoom {
+  display: block;
+}
+.gallery .seconds-img:hover .zoom {
+  display: block;
 }
 .gallery button {
-  width: 190px;
+  width: 100%;
   min-height: 50px;
   background: transparent;
   border: 1px solid #000;
@@ -444,14 +467,8 @@ table {
   flex-direction: column;
   align-items: center;
 }
-.projects .container .line {
-  content: "";
-  width: 100px;
-  height: 1px;
-  background-color: #000;
-  margin-bottom: 15px;
-}
 .projects .container h2 {
+  position: relative;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -465,6 +482,18 @@ table {
   .projects .container h2 {
     font-size: 35px;
   }
+}
+.projects .container .line::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #000;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .projects .container .grid img {
   height: auto;
@@ -495,7 +524,7 @@ table {
   margin-bottom: 40px;
 }
 .projects .container .grid button {
-  width: 190px;
+  width: 100%;
   min-height: 50px;
   background: transparent;
   border: 1px solid #000;
@@ -560,14 +589,8 @@ table {
     padding: 5;
   }
 }
-.footer .container .form .line {
-  width: 100px;
-  height: 1px;
-  background-color: #000;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
 .footer .container .form h3 {
+  position: relative;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -575,6 +598,18 @@ table {
   text-align: center;
   color: #2C4058;
   margin-bottom: 20px;
+}
+.footer .container .form .line::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #000;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer .container .form .address-list li {
   text-decoration: none;
@@ -633,7 +668,7 @@ table {
   color: #a19f9f;
 }
 .footer .container .form .inputs button {
-  width: 140px;
+  width: 100%;
   height: 50px;
   background-color: transparent;
   font-family: "Montserrat";
@@ -674,7 +709,7 @@ table {
   flex-wrap: wrap;
 }
 .footer .container .icon-list__item:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 15px;
 }
 .footer .container .icon-list .icon {
   width: 40px;
@@ -720,6 +755,10 @@ table {
     padding-top: 223px;
     text-align: center;
   }
+  .slider-content .slick-dots {
+    bottom: 250px;
+    right: 32px;
+  }
   .slider-content .arrow:hover svg {
     stroke: #fff;
   }
@@ -731,11 +770,12 @@ table {
     flex-direction: column;
     align-items: center;
   }
-  .projects .container .line {
-    margin-bottom: 35px;
-  }
   .projects .container h2 {
     margin-bottom: 90px;
+    padding-top: 30px;
+  }
+  .projects .container .line::before {
+    top: 0px;
   }
   .projects .container .grid .grid-1 {
     position: relative;
@@ -818,11 +858,12 @@ table {
   .news .container .slider-news {
     margin-bottom: 0;
   }
-  .news .container .line {
-    margin-bottom: 30px;
-  }
   .news .container h2 {
     margin-bottom: 90px;
+    padding-top: 30px;
+  }
+  .news .container .line::before {
+    top: 0px;
   }
   .news .container h3 {
     margin-bottom: 15px;
@@ -833,11 +874,12 @@ table {
   .gallery {
     padding-top: 150px;
   }
-  .gallery .line {
-    margin-bottom: 30px;
-  }
   .gallery h2 {
     margin-bottom: 90px;
+    padding-top: 30px;
+  }
+  .gallery .line::before {
+    top: 0px;
   }
   .gallery .gallery-container {
     display: grid;
@@ -862,13 +904,6 @@ table {
   .gallery .div5 {
     grid-area: 2/3/3/4;
   }
-  .gallery .zoom {
-    top: unset;
-  }
-  .gallery .zoom img {
-    width: 70px;
-    height: 70px;
-  }
   .gallery .first-img img {
     max-width: 380px;
     height: 312px;
@@ -876,6 +911,13 @@ table {
   .gallery .seconds-img img {
     width: 185px;
     height: 150px;
+  }
+  .gallery .zoom img {
+    width: 50px;
+    height: 50px;
+  }
+  .gallery button {
+    width: 190px;
   }
   .footer .container {
     position: relative;
@@ -894,6 +936,9 @@ table {
   }
   .footer .container .form h3 {
     margin-bottom: 20px;
+  }
+  .footer .container .form .line::before {
+    top: 20px;
   }
   .footer .container .form .address-list li {
     margin-bottom: 15px;
@@ -924,6 +969,9 @@ table {
     border: none;
     border-bottom: 1px solid #a19f9f;
     color: #a19f9f;
+  }
+  .footer .container .form .inputs button {
+    width: 140px;
   }
   .footer .container img {
     width: 241px;
@@ -1077,9 +1125,6 @@ table {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
-  .gallery .gallery-container .zoom {
-    top: unset;
-  }
   .gallery .div1 {
     grid-area: 1/1/3/2;
   }
@@ -1103,6 +1148,10 @@ table {
     width: 285px;
     height: 214px;
   }
+  .gallery .zoom img {
+    width: 50px;
+    height: 50px;
+  }
   .footer .container {
     position: relative;
     display: flex;
@@ -1120,12 +1169,12 @@ table {
     flex-direction: row;
     justify-content: space-between;
   }
-  .footer .container .form .line {
-    margin-bottom: 30px;
-  }
   .footer .container .form h3 {
     font-size: 44px;
     margin-bottom: 42px;
+  }
+  .footer .container .form .line::before {
+    top: 30px;
   }
   .footer .container .form .address-list li:not(:last-child) {
     margin-bottom: 35px;
