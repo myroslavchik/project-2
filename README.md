@@ -6,7 +6,7 @@ Home page of Product company website.
 ___
 
 #### :link: Live Demo: 
-[SITE](https://https://myroslavtiukhtii.github.io/monticello/)
+[SITE](https://myroslavtiukhtii.github.io/monticello/)
 
 [Design](The Free Library)
 ___
