@@ -28,10 +28,13 @@
                 border: 1px solid #fff;
                 background-color: transparent;
                 margin-right: 14px;
+                transition: .3s ease-in;
             }
 
-            .menu-list__item:hover::before {
-                background-color: #fff;
+            @media (any-hover: hover) {
+                .menu-list__item:hover::before {
+                    background-color: #fff;
+                }
             }
 
                 .menu-list__item:not(:last-child) {
@@ -50,14 +53,6 @@
             }
         }
     }
-
-    .icon-list {
-        
-        .icon-list__item:hover svg {
-            stroke: #FFFFFF;
-        }
-    }
-
         .menu-btn {
             display: none;
         }

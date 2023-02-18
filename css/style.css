@@ -50,10 +50,46 @@ table {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 768px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.up-btn {
+  display: none;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  width: 45px;
+  height: 45px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: rgba(85, 184, 255, 0.2);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.up-btn:hover {
+  background-color: #55B7FF;
+  color: #fff;
 }
 
 .header {
@@ -455,11 +491,14 @@ table {
   color: #000;
   text-transform: uppercase;
   cursor: pointer;
+  transition: 0.3s ease-in;
 }
-.gallery button:hover {
-  background-color: #55B7FF;
-  border: unset;
-  color: #FFFFFF;
+@media (any-hover: hover) {
+  .gallery button:hover {
+    background-color: #55B7FF;
+    border: unset;
+    color: #FFFFFF;
+  }
 }
 
 .projects .container {
@@ -550,11 +589,14 @@ table {
 }
 .projects .container .grid button {
   cursor: pointer;
+  transition: 0.3s ease;
 }
-.projects .container .grid button:hover {
-  background-color: #55B7FF;
-  border: unset;
-  color: #FFFFFF;
+@media (any-hover: hover) {
+  .projects .container .grid button:hover {
+    background-color: #55B7FF;
+    border: unset;
+    color: #FFFFFF;
+  }
 }
 
 .footer {
@@ -680,11 +722,14 @@ table {
   color: #000;
   text-transform: uppercase;
   cursor: pointer;
+  transition: 0.3s ease-in;
 }
-.footer .container .form .inputs button:hover {
-  background-color: #55B7FF;
-  border: unset;
-  color: #FFFFFF;
+@media (any-hover: hover) {
+  .footer .container .form .inputs button:hover {
+    background-color: #55B7FF;
+    border: unset;
+    color: #FFFFFF;
+  }
 }
 .footer .container h3 {
   font-family: "Montserrat";
@@ -737,16 +782,25 @@ table {
     display: flex;
     flex-direction: row;
   }
+  .header .container .icon-list .icon-list__item .icon {
+    transition: 0.3s ease-in;
+  }
   .header .container .icon-list__item:not(:last-child) {
     margin-right: 20px;
   }
+}
+@media only screen and (min-width: 768px) and (any-hover: hover) {
   .header .container .icon-list .icon-list__item:hover svg {
-    stroke: #ffffff;
+    scale: 1.1;
   }
+}
+@media only screen and (min-width: 768px) {
   .header .container .icon-list .icon {
     width: 40px;
     height: 40px;
   }
+}
+@media only screen and (min-width: 768px) {
   .slider-content {
     margin-top: -108px;
     margin-bottom: 100px;
@@ -762,6 +816,8 @@ table {
   .slider-content .arrow:hover svg {
     stroke: #fff;
   }
+}
+@media only screen and (min-width: 768px) {
   .projects {
     overflow: hidden;
   }
@@ -850,6 +906,8 @@ table {
     content: url(../img/icon-locations.svg);
     margin-right: 10px;
   }
+}
+@media only screen and (min-width: 768px) {
   .news {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -871,6 +929,8 @@ table {
   .news .container p {
     margin-bottom: 25px;
   }
+}
+@media only screen and (min-width: 768px) {
   .gallery {
     padding-top: 150px;
   }
@@ -919,6 +979,8 @@ table {
   .gallery button {
     width: 190px;
   }
+}
+@media only screen and (min-width: 768px) {
   .footer .container {
     position: relative;
     display: flex;
@@ -1011,14 +1073,21 @@ table {
     border: 1px solid #fff;
     background-color: transparent;
     margin-right: 14px;
+    transition: 0.3s ease-in;
   }
+}
+@media only screen and (min-width: 1170px) and (any-hover: hover) {
   .header .container .menu .menu-list .menu-list__item:hover::before {
     background-color: #fff;
   }
+}
+@media only screen and (min-width: 1170px) {
   .header .container .menu .menu-list .menu-list__item:not(:last-child) {
     margin-bottom: 0;
     margin-right: 70px;
   }
+}
+@media only screen and (min-width: 1170px) {
   .header .container .menu .menu-list li a {
     text-transform: uppercase;
     font-family: "Source Sans Pro";
@@ -1028,12 +1097,13 @@ table {
     line-height: 18px;
     color: #FFFFFF;
   }
-  .header .container .icon-list .icon-list__item:hover svg {
-    stroke: #FFFFFF;
-  }
+}
+@media only screen and (min-width: 1170px) {
   .header .container .menu-btn {
     display: none;
   }
+}
+@media only screen and (min-width: 1170px) {
   .slider-content .titles {
     padding-top: 300px;
     text-align: center;
@@ -1048,6 +1118,8 @@ table {
     flex-direction: column;
     align-items: flex-end;
   }
+}
+@media only screen and (min-width: 1170px) {
   .projects {
     overflow: hidden;
     padding-bottom: 150px;
@@ -1095,6 +1167,8 @@ table {
     bottom: 57px;
     left: 260px;
   }
+}
+@media only screen and (min-width: 1170px) {
   .news .container .slider-news {
     display: flex;
     justify-content: center;
@@ -1118,6 +1192,8 @@ table {
     margin-right: 15px;
     margin-left: 15px;
   }
+}
+@media only screen and (min-width: 1170px) {
   .gallery .gallery-container {
     display: grid;
     grid-template-columns: 580px repeat(2, 285px);
@@ -1152,6 +1228,8 @@ table {
     width: 50px;
     height: 50px;
   }
+}
+@media only screen and (min-width: 1170px) {
   .footer .container {
     position: relative;
     display: flex;
@@ -1205,8 +1283,13 @@ table {
   .footer .container .icon-list__item:not(:last-child) {
     margin-right: 20px;
   }
+  .footer .container .icon-list .icon-list__item:hover svg {
+    transition: 0.3s ease-in;
+  }
+}
+@media only screen and (min-width: 1170px) and (any-hover: hover) {
   .footer .container .icon-list__item:hover svg {
-    stroke: #ffffff;
+    scale: 1.1;
   }
 }
 

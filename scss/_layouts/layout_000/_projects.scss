@@ -99,12 +99,15 @@
 
         button {
             cursor: pointer;
+            transition: .3s ease;
         }
     
-        button:hover {
-            background-color: $lightblue;
-            border: unset;
-            color: $white;
+        @media (any-hover: hover) {
+            button:hover {
+                background-color: $lightblue;
+                border: unset;
+                color: $white;
+            }
         }
 
     }

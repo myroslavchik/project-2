@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    /// BUTTON
+    // button
     
     let menuBtn = document.querySelector('.menu-btn');
     let menu = document.querySelector('.menu');
@@ -10,8 +10,56 @@ $(document).ready(function() {
         menu.classList.toggle('active');
     })
 
+    const MENULINK = document.querySelectorAll('.menu-list__item');
 
-    /// SLIDER main 
+    for (let i = 0; i < MENULINK.length; i++) {
+      MENULINK[i].addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        menu.classList.remove('active');
+      })
+    }
+
+    // up btn
+
+    const UPBTN = document.querySelector('.up-btn');
+
+    UPBTN.addEventListener('click', toWindowScrollTop);
+
+    function toWindowScrollTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        UPBTN.style.display = 'block';
+      } else {
+        UPBTN.style.display = 'none';
+      }
+    }
+
+    // reveal
+
+    function reveal() {
+      let reveals = document.querySelectorAll(".reveal");
+    
+      for (var i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementVisible = 150;
+    
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+    
+    window.addEventListener("scroll", reveal);
+
+
+    // slider main 
 
 $('.slider').slick({
     arrows:false,
@@ -27,7 +75,7 @@ $('.slider').slick({
   })
 
 
-  /// SLIDER Guitars
+  // slider news
 
   $('.slider-news').slick({
     dots: true,
@@ -69,7 +117,7 @@ $('.slider').slick({
   });
 
 
-  ////Gallery
+  // Gallery
 
   $('.gallery-container').magnificPopup({
     delegate: 'a',

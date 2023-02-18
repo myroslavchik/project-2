@@ -66,12 +66,16 @@
             &__item:not(:last-child) {
                 margin-right: 20px;
             }
+
+            .icon-list__item:hover svg {
+                transition: .3s ease-in;
+            }
         }
 
-        .icon-list__item:hover svg {
-            stroke: #ffffff;
+        @media (any-hover: hover) {
+            .icon-list__item:hover svg {
+                scale: 1.1;
+            }
         }
-
     }
-
 }

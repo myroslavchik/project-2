@@ -129,13 +129,15 @@
                     color: $black;
                     text-transform: uppercase;
                     cursor: pointer;
+                    transition: .3s ease-in;
                 }
 
-                button:hover {
-                    background-color: $lightblue;
-                    border: unset;
-                    color: $white;
-        
+                @media (any-hover: hover) {
+                    button:hover {
+                        background-color: $lightblue;
+                        border: unset;
+                        color: $white;
+                    }
                 }
             }
         }
@@ -172,7 +174,5 @@
                 height: 40px;
             }
         }
-
     }
-
 }
