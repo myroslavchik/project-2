@@ -1,0 +1,61 @@
+.projects {
+    overflow: hidden;
+    padding-bottom: 150px;
+
+    .container {
+
+    .grid {
+
+        margin-bottom: 0;
+
+        .locations {
+            margin-bottom: 0;
+        }
+
+        .flexbox-1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 120px;
+
+            img {
+                height: 470px;
+                width: 630px;
+                margin-bottom: 0;
+                z-index: 999;
+                margin-right: 70px;
+            }
+
+            .blue {
+                position: absolute;
+                width: 785px;
+                min-height: 470px;
+                background-color: #55B7FF;
+                bottom: 57px;
+                right: 260px;
+            }
+        }
+
+        .flexbox-2 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            img {
+                width: 625px;
+            }
+
+            .purple {
+                position: absolute;
+                width: 785px;
+                min-height: 470px;
+                background-color: #7E5AFF;
+                bottom: 57px;
+                left: 260px;
+            }
+
+        }
+
+        }
+    }  
+}

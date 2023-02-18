@@ -1,0 +1,117 @@
+.projects {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            position: relative;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            text-align: center;
+            color: $darkBlue;
+            margin-bottom: 45px;
+            text-transform: uppercase;
+
+            @media only screen and (max-width: 400px) {
+                font-size: 35px;
+            }
+        }
+
+        .line::before {
+            position: absolute;
+            content: '';
+            width: 100px;
+            height: 1px;
+            background-color: $black;
+            top: -15px;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+    .grid {
+
+        img {
+            height: auto;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            color: $darkBlue;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            text-align: unset;
+            margin-bottom: 19px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: $darkBlue;
+            margin-bottom: 40px;
+        }
+
+        button {
+            width: 100%;
+            min-height: 50px;
+            background: transparent;
+            border: 1px solid $black;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: $black;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+        }
+
+        .locations {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: $black;
+        }
+
+        .locations::before {
+            content: url(/img/icon-locations.svg);
+            margin-right: 10px;
+        }
+
+        button {
+            cursor: pointer;
+            transition: .3s ease;
+        }
+    
+        @media (any-hover: hover) {
+            button:hover {
+                background-color: $lightblue;
+                border: unset;
+                color: $white;
+            }
+        }
+
+    }
+
+}
+
+}

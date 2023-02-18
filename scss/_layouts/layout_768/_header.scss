@@ -1,0 +1,40 @@
+.header {
+
+    .container {
+        min-height: 108px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            width: 241px;
+            height: 54px;
+        }
+
+        .icon-list {
+            display: flex;
+            flex-direction: row;
+
+            .icon-list__item .icon {
+                transition: .3s ease-in;
+            }
+        
+            &__item:not(:last-child) {
+                margin-right: 20px;
+            }
+
+            @media (any-hover: hover) {
+                .icon-list__item:hover svg {
+                    scale: 1.1;
+                }
+            }
+ 
+            .icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    line-height: 1;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.up-btn {
+    display: none;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #55b8ff33;
+    transition: .3s ease-in;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.up-btn:hover {
+    background-color: #55B7FF;
+    color: #fff;
+}

@@ -1,0 +1,25 @@
+.slider-content { 
+
+    margin-top: -108px;
+    margin-bottom: 100px;
+
+    .titles {
+
+        padding-top: 223px;
+        text-align: center;
+
+    }
+
+    .slick-dots {
+        bottom: 250px;
+        right: 32px;
+    }
+
+    .arrow:hover  {
+
+        svg {
+            stroke: #fff;
+        }
+    }
+
+}
